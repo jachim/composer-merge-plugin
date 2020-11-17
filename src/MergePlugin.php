@@ -140,8 +140,8 @@ class MergePlugin implements PluginInterface, EventSubscriberInterface
         return array(
             PluginEvents::INIT =>
                 array('onInit', self::CALLBACK_PRIORITY),
-            InstallerEvents::PRE_DEPENDENCIES_SOLVING =>
-                array('onDependencySolve', self::CALLBACK_PRIORITY),
+//            InstallerEvents::PRE_DEPENDENCIES_SOLVING =>
+//                array('onDependencySolve', self::CALLBACK_PRIORITY),
             PackageEvents::POST_PACKAGE_INSTALL =>
                 array('onPostPackageInstall', self::CALLBACK_PRIORITY),
             ScriptEvents::POST_INSTALL_CMD =>
